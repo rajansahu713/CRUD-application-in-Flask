@@ -2,7 +2,7 @@
 
 Introduction
 >  In the application we are performing basic CRUD(Create, Read, Uodate, Delete) Operating using Flask.
-![](Screenshot/Screenshot%20(413).png)
+![](images/Screenshot%20(413).png.png)
 
 
 
