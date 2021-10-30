@@ -5,7 +5,7 @@ Introduction
 <br>
 
 
-<img src="https://github.com/rajansahu713/CRUD-application-in-Flask/blob/main/images/Screenshot%20(413).png" width="350" height="300">
+<img align="center" src="https://github.com/rajansahu713/CRUD-application-in-Flask/blob/main/images/Screenshot%20(413).png" width="500" height="350">
 
 
 
