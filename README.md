@@ -14,7 +14,7 @@ from flask import Flask, render_template, request, redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 ```
 
-> Step2:
+> Step2: <br>
     1. Initializing instance of flask app by declearing 
 ```python
 app = Flask(__name__)
