@@ -4,21 +4,21 @@ Introduction
 >  In the application we are performing basic CRUD(Create, Read, Uodate, Delete) Operating using Flask.
 
 > Step1: 
-   2. Import all the requirements
-   1. Sqlalchemy is sqlite connector use to communicate with sqlite database. 
+   1. Import all the requirements
+   2. Sqlalchemy is sqlite connector use to communicate with sqlite database. 
 ```python
 from flask import Flask, render_template, request, redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 ```
 
 > Step2:
-    Initializing instance of flask app by declearing 
+    1. Initializing instance of flask app by declearing 
 ```python
 app = Flask(__name__)
 ```
 
 > Step3:
-    Creating Database
+    1. Creating Database
 ```python 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///text.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -26,7 +26,7 @@ db = SQLAlchemy(app)
 ```
 
 Step4:
-    moving a step ahead by creating our model
+    1. moving a step ahead by creating our model
 ```python
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -38,8 +38,8 @@ class User(db.Model):
 ```
 
 Step5:
-    This is use route to fetch all the resources or inserting a new resource to it.
-    "index.html" is use as to show all the resources and also use to insert a new resources to table.
+    1. This is use route to fetch all the resources or inserting a new resource to it.
+    2. "index.html" is use as to show all the resources and also use to insert a new resources to table.
 ```python
 @app.route('/', methods=['GET', 'POST'])
 def Index():
@@ -53,7 +53,9 @@ def Index():
     user = User.query.all() 
     return render_template('index.html', user=user)
 ```
-    This route is used to delete particular resource from table
+
+    3. This route is used to delete particular resource from table
+
 ```python
 @app.route('/delete/<int:id>')
 def delete(id):
@@ -62,7 +64,7 @@ def delete(id):
     db.session.commit()
     return redirect(url_for("Index"))
 ```
-    The below route is used to update the resource of the table
+    4. The below route is used to update the resource of the table
 ```python
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
@@ -80,7 +82,7 @@ def update(id):
     return render_template('update.html', todo=todo)
 ```
 step6:
-    hosting crud application localhost 8000 port
+    1. hosting crud application localhost 8000 port
 ```python
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
