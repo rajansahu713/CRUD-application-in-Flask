@@ -2,7 +2,9 @@
 
 Introduction
 >  In the application we are performing basic CRUD(Create, Read, Uodate, Delete) Operating using Flask.
-![](images/Screenshot%20(413).png.png)
+<br>
+
+![alt text](https://github.com/rajansahu713/CRUD-application-in-Flask/blob/main/images/Screenshot%20(413).png)
 
 
 
@@ -20,7 +22,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 ```
 
-> Step3:
+> Step3:<br>
     1. Creating Database
 ```python 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///text.db"
@@ -28,7 +30,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 ```
 
-Step4:
+Step4:<br>
     1. moving a step ahead by creating our model
 ```python
 class User(db.Model):
@@ -40,7 +42,7 @@ class User(db.Model):
         return '<Title %r>' % self.title
 ```
 
-Step5:
+Step5:<br>
     1. This is use route to fetch all the resources or inserting a new resource to it.
     2. "index.html" is use as to show all the resources and also use to insert a new resources to table.
 ```python
@@ -84,7 +86,7 @@ def update(id):
     todo = User.query.filter_by(id=id).first()
     return render_template('update.html', todo=todo)
 ```
-step6:
+step6:<br>
     1. hosting crud application localhost 8000 port
 ```python
 if __name__ == "__main__":
