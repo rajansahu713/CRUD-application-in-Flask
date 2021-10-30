@@ -1,9 +1,10 @@
 # CRUD application in Flask
 
 Introduction
->  In the application we are performing CRUD(Create, Read, Uodate, Delete) Operating using Flask.
+>  In the application we are performing basic CRUD(Create, Read, Uodate, Delete) Operating using Flask.
 
-> Step1: Import all the requirements
+> Step1: 
+   2. Import all the requirements
    1. Sqlalchemy is sqlite connector use to communicate with sqlite database. 
 ```python
 from flask import Flask, render_template, request, redirect,url_for
