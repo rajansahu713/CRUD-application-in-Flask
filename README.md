@@ -4,7 +4,8 @@ Introduction
 >  In the application we are performing basic CRUD(Create, Read, Uodate, Delete) Operating using Flask.
 <br>
 
-![alt text](https://github.com/rajansahu713/CRUD-application-in-Flask/blob/main/images/Screenshot%20(413).png)
+
+<img src="https://github.com/rajansahu713/CRUD-application-in-Flask/blob/main/images/Screenshot%20(413).png" width="150" height="280">
 
 
 
