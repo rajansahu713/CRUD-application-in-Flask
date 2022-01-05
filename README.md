@@ -8,7 +8,7 @@ Introduction
 <img align="center" src="https://github.com/rajansahu713/CRUD-application-in-Flask/blob/main/images/Screenshot%20(413).png" width="500" height="350">
 
 <br><br>
->     And I also added the requirement.txt file in respo please check it and install all the dependancy to run the application. 
+And I also added the requirement.txt file in respo please check it and install all the dependancy to run the application. 
 <br>
 
 > Step1: 
