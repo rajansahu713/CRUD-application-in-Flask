@@ -12,6 +12,7 @@ Introduction
 <br>
 
 > Step1: 
+
       1. Import all the requirements
       2. Sqlalchemy is sqlite connector use to communicate with sqlite database. 
 
