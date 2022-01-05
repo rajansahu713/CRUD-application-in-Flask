@@ -10,9 +10,11 @@ Introduction
 <br><br>
 >     And I also added the requirement.txt file in respo please check it and install all the dependancy to run the application. 
 <br>
+
 > Step1: 
-   1. Import all the requirements
-   2. Sqlalchemy is sqlite connector use to communicate with sqlite database. 
+      1. Import all the requirements
+      2. Sqlalchemy is sqlite connector use to communicate with sqlite database. 
+
 ```python
 from flask import Flask, render_template, request, redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
